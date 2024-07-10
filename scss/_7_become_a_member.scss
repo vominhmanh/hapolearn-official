@@ -8,9 +8,10 @@
     padding: 10% 0;
 
     .become-a-member-tilte {
-      font-weight: bold;
+      font-weight: bolder;
       letter-spacing: -0.02em;
       color: white;
+      -webkit-text-stroke-width: thin;
     }
 
     .become-a-member-button {
@@ -22,16 +23,15 @@
 
       &:hover {
         text-decoration: none;
-        background-color: $light-green;
-        color: white;
+        color: $nearblack;
       }
     }
   }
   @media only screen and (max-width: 575.98px) {
     .banner-text {
       .become-a-member-tilte {
-        font-size: 1rem;
-        margin: 0 20% 5% 20%;
+        font-size: 23px;
+        margin: 0 10% 5% 10%;
       }
 
       .become-a-member-button {
@@ -44,9 +44,9 @@
   @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
     .banner-text {
       .become-a-member-tilte {
-        font-size: 2rem;
+        font-size: 40px;
         margin: 0 auto 50px auto;
-        width: 545px;
+        width: 520px;
       }
 
       .become-a-member-button {
@@ -70,9 +70,10 @@
   @media only screen and (min-width: 1200px) {
     .banner-text {
       .become-a-member-tilte {
-        font-size: 3em;
+        font-size: 60px;
         margin: 0 auto 50px auto;
-        width: 545px;
+        width: 650px;
+        -webkit-text-stroke-width: thin;
       }
 
       .become-a-member-button {

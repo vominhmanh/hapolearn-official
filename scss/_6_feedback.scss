@@ -1,5 +1,5 @@
 .feedback {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 
   .feedback-description {
     @media only screen and (min-width: 1024px) {
@@ -13,15 +13,20 @@
     }
   }
 
+  .feedback-list {
+    width: 90%;
+    margin: auto;
+  }
+
   .comment {
     border: 0.5px gray solid;
     border-radius: 10px;
-    padding: 10px;
+    padding: 1.5em 1em;
     box-shadow: 5px 10px 8px gray;
-    min-height: 150px;
 
     .comment-text {
       padding: 1em;
+      margin: 0;
       border-left: 5px gray solid;
     }
   }
@@ -45,7 +50,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 25px;
-    color: $hapo_learn_title_color;
+    color: $nearblack;
     -webkit-text-stroke-width: 0.5px;
   }
 
@@ -53,7 +58,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    color: black;
   }
 
   .customer-rate {
@@ -65,9 +69,11 @@
 }
 
 .comment-div {
+  position: relative;
   .comment {
     border: 0.5px solid gray;
     border-radius: 10px;
+    position: relative;
   }
 
   .comment:after,
@@ -92,4 +98,24 @@
     border-color: gray transparent transparent transparent;
     border-width: 11px;
   }
+}
+
+.slick-prev:before {
+  color: gray !important;
+  position: absolute !important;
+  right: -10px;
+  top: -180% !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+}
+
+.slick-next:before {
+  color: gray !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: -180% !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
 }

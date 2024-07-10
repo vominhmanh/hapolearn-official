@@ -14,11 +14,12 @@
 }
 
 .card {
-  height: 400px;
+  height: 470px;
   border-radius: 15px;
+  box-shadow: 0 0 10px 1px gray;
 
   .card-img {
-    height: 50%;
+    height: 45%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
@@ -27,38 +28,45 @@
     }
   }
 
+  .card-title {
+    color: $light-green !important;
+    font-size: 30px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+  }
   .card-text {
     white-space: wrap;
-    height: 80px;
+    height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  .card-title {
-    color: $light-green !important;
-    font-weight: bold;
-    @include opensans();
+  .course-link {
+    margin-top: 22px;
   }
 
   .course-link-a {
-    @include utmbryantlg();
-    @include normal-link();
-    @include active-link();
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px 35px;
+    white-space: nowrap;
+    @media only screen and (max-width: 575.98px) {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
   }
-}
-
-.title-underline {
-  border: 4px solid $active-bg;
-  border-radius: 10px;
-  width: 15%;
 }
 
 .view-other-courses {
-  .h-mobile {
-    @media only screen and (max-width: 575.98px) {
-      font-size: 5vw;
-    }
+  @media only screen and (max-width: 575.98px) {
+    font-size: 8vw !important;
   }
-
-  @include active-link-mobile();
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    font-size: 4vw !important;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 40px !important;
+  }
+  color: $light-green !important;
 }

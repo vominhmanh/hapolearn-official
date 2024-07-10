@@ -1,6 +1,13 @@
 .carousel-inner {
   .background {
-    padding: 10% 0;
+    padding: 5% 0;
+  }
+
+  .decor {
+    color: white;
+    &.why-hapolearn {
+      font-weight: bolder;
+    }
   }
 
   @media only screen and (max-width: 575.98px) {
@@ -27,19 +34,15 @@
       &.why-hapolearn {
         top: 15%;
         left: 40%;
-        @include opensans();
-        color: white;
         font-size: 40px;
         width: 50%;
         line-height: 50px;
       }
 
       &.reason {
-        top: 35%;
+        top: 40%;
         left: 10%;
-        @include opensans();
-        color: white;
-        font-size: 12px;
+        font-size: 13px;
       }
     }
   }
@@ -56,24 +59,20 @@
 
       &.laptop-small {
         width: 33vw;
-        top: -11%;
+        top: -20%;
         left: 0%;
       }
 
       &.why-hapolearn {
         top: 25%;
         left: 30%;
-        @include opensans();
-        color: white;
         font-size: 40px;
       }
 
       &.reason {
-        top: 50%;
-        left: 10%;
-        @include opensans();
-        color: white;
-        font-size: 1.5vw;
+        top: 52%;
+        left: 11%;
+        font-size: 1.2vw;
       }
     }
   }
@@ -85,28 +84,24 @@
       &.laptop-large {
         width: 40vw;
         top: 30%;
-        left: 50%;
+        left: 55%;
       }
 
       &.laptop-small {
         width: 33vw;
-        top: -11%;
+        top: -20%;
         left: 0%;
       }
 
       &.why-hapolearn {
-        top: 50%;
-        left: 10%;
-        @include opensans();
-        color: white;
-        font-size: 5vw;
+        top: 42%;
+        left: 8%;
+        font-size: 5.5vw;
       }
 
       &.reason {
-        top: 60%;
+        top: 55%;
         left: 10%;
-        @include opensans();
-        color: white;
         font-size: 1.5vw;
       }
     }
